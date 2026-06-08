@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420">
+  <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1"/></pattern><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#22d3ee"/></marker></defs>
+  <rect width="920" height="420" rx="24" fill="#0f172a"/><rect width="920" height="420" rx="24" fill="url(#grid)" opacity=".7"/>
+  <text x="38" y="48" fill="#e2e8f0" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">粒子手势交互 · 实时渲染链路</text>
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <rect x="70" y="120" width="150" height="80" rx="16" fill="#082f49" stroke="#38bdf8"/><text x="145" y="154" fill="#fff" font-size="16" font-weight="700">摄像头</text><text x="145" y="180" fill="#bae6fd" font-size="13">Video Stream</text>
+    <rect x="282" y="120" width="150" height="80" rx="16" fill="#064e3b" stroke="#34d399"/><text x="357" y="154" fill="#fff" font-size="16" font-weight="700">手势识别</text><text x="357" y="180" fill="#a7f3d0" font-size="13">MediaPipe</text>
+    <rect x="494" y="120" width="150" height="80" rx="16" fill="#78350f" stroke="#fbbf24"/><text x="569" y="154" fill="#fff" font-size="16" font-weight="700">状态计算</text><text x="569" y="180" fill="#fde68a" font-size="13">扩散 / 手指数</text>
+    <rect x="706" y="120" width="150" height="80" rx="16" fill="#4c1d95" stroke="#a78bfa"/><text x="781" y="154" fill="#fff" font-size="16" font-weight="700">Three.js</text><text x="781" y="180" fill="#ddd6fe" font-size="13">15000 粒子</text>
+    <circle cx="357" cy="304" r="48" fill="#164e63" stroke="#22d3ee"/><text x="357" y="300" fill="#fff" font-size="15" font-weight="700">鼠标降级</text><text x="357" y="322" fill="#a5f3fc" font-size="12">无摄像头预览</text>
+    <circle cx="569" cy="304" r="48" fill="#14532d" stroke="#86efac"/><text x="569" y="300" fill="#fff" font-size="15" font-weight="700">模型切换</text><text x="569" y="322" fill="#bbf7d0" font-size="12">爱心 / 土星</text>
+  </g>
+  <g fill="none" stroke="#22d3ee" stroke-width="2.4" marker-end="url(#arrow)"><path d="M220 160H282"/><path d="M432 160H494"/><path d="M644 160H706"/><path d="M357 256V200"/><path d="M569 256V200"/></g>
+  <text x="460" y="392" fill="#94a3b8" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle">把手部关键点转成粒子形态参数，驱动实时视觉反馈</text>
+</svg>

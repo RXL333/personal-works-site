@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420">
+  <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1"/></pattern><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#fb923c"/></marker></defs>
+  <rect width="920" height="420" rx="24" fill="#0f172a"/><rect width="920" height="420" rx="24" fill="url(#grid)" opacity=".7"/>
+  <text x="38" y="48" fill="#e2e8f0" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">像素机甲对战 · 游戏状态机</text>
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <circle cx="116" cy="194" r="18" fill="#fb923c"/>
+    <rect x="190" y="154" width="150" height="80" rx="18" fill="#082f49" stroke="#38bdf8"/><text x="265" y="188" fill="#fff" font-size="16" font-weight="700">首页</text><text x="265" y="212" fill="#bae6fd" font-size="13">开始游戏</text>
+    <rect x="430" y="154" width="150" height="80" rx="18" fill="#064e3b" stroke="#34d399"/><text x="505" y="188" fill="#fff" font-size="16" font-weight="700">对战中</text><text x="505" y="212" fill="#a7f3d0" font-size="13">移动 / 攻击 / 防御</text>
+    <rect x="670" y="154" width="150" height="80" rx="18" fill="#78350f" stroke="#fbbf24"/><text x="745" y="188" fill="#fff" font-size="16" font-weight="700">游戏结束</text><text x="745" y="212" fill="#fde68a" font-size="13">胜负展示</text>
+    <rect x="430" y="294" width="150" height="58" rx="14" fill="#4c1d95" stroke="#a78bfa"/><text x="505" y="328" fill="#fff" font-size="15" font-weight="700">Canvas 渲染循环</text>
+  </g>
+  <g fill="none" stroke="#fb923c" stroke-width="2.4" marker-end="url(#arrow)"><path d="M134 194H190"/><path d="M340 194H430"/><path d="M580 194H670"/><path d="M745 234C690 308 624 326 580 323"/><path d="M505 294V234"/></g>
+  <text x="460" y="392" fill="#94a3b8" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle">React 负责页面状态，Canvas 循环负责高频绘制、碰撞和血量变化</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#34d399"/></marker>
+  </defs>
+  <rect width="920" height="420" rx="24" fill="#0f172a"/><rect width="920" height="420" rx="24" fill="url(#grid)" opacity=".7"/>
+  <text x="38" y="48" fill="#e2e8f0" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">浏览器扩展 · 内容脚本链路</text>
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <rect x="58" y="132" width="135" height="76" rx="16" fill="#082f49" stroke="#38bdf8"/><text x="125" y="164" fill="#fff" font-size="16" font-weight="700">学习通页面</text><text x="125" y="188" fill="#bae6fd" font-size="13">题目 / 视频</text>
+    <rect x="245" y="132" width="135" height="76" rx="16" fill="#064e3b" stroke="#34d399"/><text x="312" y="164" fill="#fff" font-size="16" font-weight="700">提取模块</text><text x="312" y="188" fill="#a7f3d0" font-size="13">DOM + 字体解密</text>
+    <rect x="432" y="132" width="135" height="76" rx="16" fill="#78350f" stroke="#fbbf24"/><text x="499" y="164" fill="#fff" font-size="16" font-weight="700">AI 解析</text><text x="499" y="188" fill="#fde68a" font-size="13">DeepSeek API</text>
+    <rect x="619" y="132" width="135" height="76" rx="16" fill="#4c1d95" stroke="#a78bfa"/><text x="686" y="164" fill="#fff" font-size="16" font-weight="700">浮动面板</text><text x="686" y="188" fill="#ddd6fe" font-size="13">展示答案</text>
+    <rect x="432" y="276" width="135" height="76" rx="16" fill="#14532d" stroke="#86efac"/><text x="499" y="308" fill="#fff" font-size="16" font-weight="700">安全填入</text><text x="499" y="332" fill="#bbf7d0" font-size="13">不自动提交</text>
+    <rect x="720" y="276" width="135" height="76" rx="16" fill="#164e63" stroke="#22d3ee"/><text x="787" y="308" fill="#fff" font-size="16" font-weight="700">视频助手</text><text x="787" y="332" fill="#a5f3fc" font-size="13">倍速 / 连播</text>
+  </g>
+  <g fill="none" stroke="#34d399" stroke-width="2.4" marker-end="url(#arrow)"><path d="M193 170H245"/><path d="M380 170H432"/><path d="M567 170H619"/><path d="M686 208C660 278 604 314 567 314"/><path d="M754 170C798 202 809 242 787 276"/></g>
+  <text x="460" y="392" fill="#94a3b8" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle">扩展只做识别、展示与辅助填入，最后提交动作保留给用户确认</text>
+</svg>

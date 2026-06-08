@@ -25,11 +25,31 @@ export interface Project {
   slug: string
   title: string
   summary: string
+  detail: string
   stack: string[]
   status: WorkStatus
   date: string
   category: string
   thumbnail: string
+  heroImage: string
+  diagramImage: string
+  detailImages: {
+    src: string
+    title: string
+    caption: string
+  }[]
+  screenshots?: {
+    src: string
+    title: string
+    caption: string
+    focus?: string
+  }[]
+  role: string
+  repoLabel: string
+  features: string[]
+  highlights: string[]
+  screenshotNeeds: string[]
+  diagramIdeas: string[]
   featured: boolean
 }
 
@@ -37,10 +57,13 @@ export interface PhotoWork {
   slug: string
   title: string
   src: string
-  category: '山野' | '花草' | '植物' | '河谷' | '海边' | '树影' | '云层' | '湖畔'
+  category: '花草' | '草木' | '云天' | '雨夜' | '水生'
   date: string
   location: string
   note: string
+  description: string
+  width: number
+  height: number
   featured: boolean
 }
 

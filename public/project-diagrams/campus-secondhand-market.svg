@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420">
+  <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1e293b" stroke-width="1"/></pattern><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#fbbf24"/></marker></defs>
+  <rect width="920" height="420" rx="24" fill="#0f172a"/><rect width="920" height="420" rx="24" fill="url(#grid)" opacity=".7"/>
+  <text x="38" y="48" fill="#e2e8f0" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">二手校园交易平台 · 页面地图</text>
+  <g font-family="Noto Sans SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <rect x="80" y="96" width="140" height="66" rx="14" fill="#082f49" stroke="#38bdf8"/><text x="150" y="134" fill="#fff" font-size="16" font-weight="700">首页</text>
+    <rect x="300" y="96" width="140" height="66" rx="14" fill="#064e3b" stroke="#34d399"/><text x="370" y="134" fill="#fff" font-size="16" font-weight="700">分类列表</text>
+    <rect x="520" y="96" width="140" height="66" rx="14" fill="#14532d" stroke="#86efac"/><text x="590" y="134" fill="#fff" font-size="16" font-weight="700">商品详情</text>
+    <rect x="300" y="236" width="140" height="66" rx="14" fill="#78350f" stroke="#fbbf24"/><text x="370" y="274" fill="#fff" font-size="16" font-weight="700">发布商品</text>
+    <rect x="520" y="236" width="140" height="66" rx="14" fill="#4c1d95" stroke="#a78bfa"/><text x="590" y="274" fill="#fff" font-size="16" font-weight="700">个人中心</text>
+    <rect x="710" y="166" width="140" height="66" rx="14" fill="#164e63" stroke="#22d3ee"/><text x="780" y="204" fill="#fff" font-size="16" font-weight="700">后台管理</text>
+  </g>
+  <g fill="none" stroke="#fbbf24" stroke-width="2.4" marker-end="url(#arrow)"><path d="M220 129H300"/><path d="M440 129H520"/><path d="M590 162V236"/><path d="M370 236V162"/><path d="M660 129C720 132 752 150 780 166"/><path d="M660 269C722 260 752 238 780 232"/></g>
+  <text x="460" y="392" fill="#94a3b8" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" text-anchor="middle">传统多页面前端覆盖浏览、详情、发布、个人中心和后台管理路径</text>
+</svg>

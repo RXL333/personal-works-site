@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="像素机甲对战：战斗判定模型">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#17324a"/></linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fffb" stop-opacity=".96"/><stop offset="1" stop-color="#d9f3e2" stop-opacity=".92"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity=".22"/></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".08"/></pattern>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#94e27d"/></marker>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#bg)"/>
+  <rect width="1200" height="720" rx="36" fill="url(#grid)"/>
+  <text x="70" y="86" fill="#f4fff7" font-family="Microsoft YaHei, Arial, sans-serif" font-size="40" font-weight="900">像素机甲对战：战斗判定模型</text>
+  <text x="72" y="128" fill="#bdd7df" font-family="Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="700">本地双人对战中的基础规则关系</text><g filter="url(#shadow)"><circle cx="600" cy="370" r="112" fill="url(#soft)" stroke="#fff" stroke-opacity=".75"/><text x="600" y="360" text-anchor="middle" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="900">战斗规则</text><text x="600" y="398" text-anchor="middle" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="700">核心协调层</text></g><g filter="url(#shadow)"><rect x="92" y="210" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="128" cy="248" r="10" fill="#89d7ff"/>
+  <text x="150" y="257" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">移动范围</text>
+  <text x="126" y="298" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">限制玩家在战斗区域内</text> </g><path d="M380 266 C 436 266, 436 322, 492 322" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><g filter="url(#shadow)"><rect x="820" y="210" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="856" cy="248" r="10" fill="#ff9a9a"/>
+  <text x="878" y="257" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">攻击距离</text>
+  <text x="854" y="298" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">靠近后攻击才会命中</text> </g><path d="M820 266 C 764 266, 764 322, 708 322" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><g filter="url(#shadow)"><rect x="92" y="470" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="128" cy="508" r="10" fill="#94e27d"/>
+  <text x="150" y="517" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">防御状态</text>
+  <text x="126" y="558" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">降低或抵消部分伤害</text> </g><path d="M380 526 C 436 526, 436 418, 492 418" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><g filter="url(#shadow)"><rect x="820" y="470" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="856" cy="508" r="10" fill="#ffe18a"/>
+  <text x="878" y="517" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">冷却节奏</text>
+  <text x="854" y="558" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">避免连续瞬间攻击</text> </g><path d="M820 526 C 764 526, 764 418, 708 418" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><g filter="url(#shadow)"><rect x="392" y="168" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="428" cy="206" r="10" fill="#ff9a9a"/>
+  <text x="450" y="215" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">血量变化</text>
+  <text x="426" y="256" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">生命归零触发胜负</text> </g><path d="M680 224 C 586 224, 586 322, 492 322" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><g filter="url(#shadow)"><rect x="392" y="536" width="288" height="112" rx="26" fill="url(#soft)" stroke="#ffffff" stroke-opacity=".72"/>
+  <circle cx="428" cy="574" r="10" fill="#89d7ff"/>
+  <text x="450" y="583" fill="#14313a" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">路由跳转</text>
+  <text x="426" y="624" fill="#5b7480" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">结束页展示胜负结果</text> </g><path d="M680 592 C 586 592, 586 418, 492 418" fill="none" stroke="#94e27d" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><text x="70" y="665" fill="#a8c8d0" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">Portfolio README Diagram</text>
+</svg>

@@ -1,6 +1,12 @@
 node_modules/
 dist/
+.npm-cache/
+
 摄影作品/
+网站截图/
+
 .env
 .DS_Store
 npm-debug.log*
+vite-dev*.log
+2026-05-24-personal-blog-portfolio.md
