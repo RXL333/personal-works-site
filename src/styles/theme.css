@@ -6803,3 +6803,339 @@
   }
 }
 
+@media (max-width: 860px) {
+  .site-frame {
+    display: grid;
+    gap: 18px;
+    padding: 12px 12px 24px;
+  }
+
+  .app-nav {
+    position: sticky;
+    top: 10px;
+    left: auto;
+    width: 100%;
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    border-radius: 30px;
+    padding: 14px;
+    transform: none;
+  }
+
+  .brand {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1.05rem, 5vw, 1.35rem);
+    line-height: 1.2;
+  }
+
+  .app-nav nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .app-nav nav a {
+    display: flex;
+    min-width: 0;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp(0.95rem, 4.2vw, 1.08rem);
+    line-height: 1.12;
+  }
+
+  .nav-actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .nav-actions button {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 8px;
+  }
+
+  .nav-actions button small {
+    font-size: clamp(0.78rem, 3.6vw, 0.92rem);
+  }
+
+  .app-footer {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    gap: 12px;
+    border-radius: 28px;
+    padding: 16px;
+    transform: none;
+  }
+
+  .app-footer > span {
+    text-align: center;
+  }
+
+  .footer-links {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .footer-links a,
+  .footer-links button {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 0 8px;
+  }
+
+  .corner-return {
+    position: sticky;
+    top: 92px;
+    left: 0;
+    z-index: 18;
+    width: 46px;
+    height: 46px;
+    margin: 0 0 -30px;
+    transform: none;
+  }
+
+  .page-shell {
+    width: 100%;
+  }
+
+  .home-cover,
+  .code-index-hero,
+  .photo-journal-hero,
+  .featured-project-band,
+  .featured-photo-strip,
+  .photo-story-hero,
+  .about-letter,
+  .contact-copy-board,
+  .archive-note-section {
+    border-radius: 24px;
+    padding: 22px;
+  }
+
+  .home-cover,
+  .code-index-hero,
+  .photo-journal-hero {
+    min-height: auto;
+  }
+
+  .home-cover-copy h1,
+  .code-index-copy h1,
+  .photo-journal-hero h1 {
+    font-size: clamp(2.35rem, 10.8vw, 4rem);
+    line-height: 0.96;
+    overflow-wrap: anywhere;
+  }
+
+  .home-cover-intro,
+  .code-index-copy p:not(.eyebrow),
+  .photo-journal-hero p:not(.eyebrow),
+  .featured-project-copy p:not(.eyebrow),
+  .featured-photo-strip p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .photo-filter-panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .photo-filter-panel .tag-chip {
+    justify-content: center;
+    min-width: 0;
+    padding: 10px 8px;
+    text-align: center;
+  }
+
+  .featured-project-band,
+  .featured-photo-strip {
+    gap: 18px;
+  }
+
+  .featured-project-image img,
+  .featured-photo-image img {
+    max-height: 360px;
+  }
+
+  .film-wall {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .film-frame,
+  .film-frame.is-wide,
+  .film-frame.is-tall {
+    min-height: 0;
+    grid-column: auto;
+    grid-row: auto;
+    transform: none;
+  }
+
+  .film-frame img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .film-frame-caption {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: 10px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .photo-story-hero {
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .photo-story-copy {
+    position: relative;
+    top: auto;
+  }
+
+  .photo-story-copy h1 {
+    font-size: clamp(2.05rem, 9.8vw, 3.35rem);
+    line-height: 1.04;
+    overflow-wrap: anywhere;
+  }
+
+  .photo-story-copy .lead {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .photo-story-copy dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .photo-story-image {
+    border-radius: 22px;
+  }
+
+  .photo-story-image img {
+    max-height: 72vh;
+    border-radius: 22px;
+    object-fit: contain;
+  }
+
+  .photo-story-block {
+    max-width: none;
+    padding: 22px;
+  }
+
+  .related-grid {
+    columns: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .search-backdrop {
+    padding: 18px 12px;
+  }
+
+  .search-modal {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-frame {
+    padding-inline: 10px;
+  }
+
+  .app-nav {
+    border-radius: 26px;
+    gap: 10px;
+    padding: 11px;
+  }
+
+  .brand {
+    font-size: 1.08rem;
+  }
+
+  .app-nav nav,
+  .nav-actions,
+  .footer-links {
+    gap: 7px;
+  }
+
+  .app-nav nav a {
+    min-height: 40px;
+    padding-inline: 4px;
+    font-size: 0.92rem;
+  }
+
+  .nav-actions button,
+  .footer-links a,
+  .footer-links button {
+    gap: 4px;
+    min-height: 40px;
+  }
+
+  .nav-actions button span,
+  .footer-links span {
+    font-size: 0.95rem;
+  }
+
+  .nav-actions button small,
+  .footer-links small {
+    font-size: 0.76rem;
+  }
+
+  .home-cover,
+  .code-index-hero,
+  .photo-journal-hero,
+  .featured-project-band,
+  .featured-photo-strip,
+  .photo-story-hero,
+  .photo-story-block,
+  .about-letter,
+  .contact-copy-board,
+  .archive-note-section {
+    padding: 18px;
+  }
+
+  .home-cover-copy h1,
+  .code-index-copy h1,
+  .photo-journal-hero h1 {
+    font-size: clamp(2.05rem, 10.5vw, 3.25rem);
+  }
+
+  .photo-story-copy h1 {
+    font-size: clamp(1.9rem, 9.8vw, 2.9rem);
+  }
+
+  .photo-story-copy dl {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-story-image img {
+    max-height: 64vh;
+  }
+}
+

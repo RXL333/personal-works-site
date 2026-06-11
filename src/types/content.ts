@@ -57,7 +57,7 @@ export interface PhotoWork {
   slug: string
   title: string
   src: string
-  category: '花草' | '草木' | '云天' | '雨夜' | '水生'
+  category: '花草' | '草木' | '云天' | '雨夜' | '竹影'
   date: string
   location: string
   note: string

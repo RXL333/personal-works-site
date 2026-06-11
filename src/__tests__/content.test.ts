@@ -14,7 +14,7 @@ describe('site content', () => {
   it('keeps photo slugs unique and includes plant-focused photos', () => {
     const slugs = photos.map((photo) => photo.slug)
     expect(new Set(slugs).size).toBe(slugs.length)
-    expect(photos.some((photo) => ['花草', '草木', '竹影', '水生'].includes(photo.category))).toBe(true)
+    expect(photos.some((photo) => ['花草', '草木', '竹影', '雨夜', '云天'].includes(photo.category))).toBe(true)
     expect(photos.every((photo) => photo.width > 0 && photo.height > 0)).toBe(true)
   })
 

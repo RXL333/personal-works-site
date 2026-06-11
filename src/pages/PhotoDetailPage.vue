@@ -103,14 +103,15 @@ const relatedPhotos = computed(() =>
 )
 
 const motion = useGsapPageMotion(pageRoot, ({ gsap, ScrollTrigger, root }) => {
-  gsap.from('.photo-story-copy > *, .photo-story-image', {
-    autoAlpha: 0,
-    y: 28,
-    filter: 'blur(8px)',
-    duration: 0.76,
-    stagger: 0.1,
-    ease: 'power3.out',
-  })
+  if (window.matchMedia('(min-width: 861px)').matches) {
+    gsap.from('.photo-story-copy > *, .photo-story-image', {
+      autoAlpha: 0,
+      y: 28,
+      duration: 0.76,
+      stagger: 0.1,
+      ease: 'power3.out',
+    })
+  }
 
   ScrollTrigger.batch(root.querySelectorAll('.photo-story-block, .related-grid .photo-tile'), {
     start: 'top 82%',

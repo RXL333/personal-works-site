@@ -9,7 +9,7 @@
         <p class="eyebrow">Home / Photos</p>
         <h1>摄影作品 <span>({{ filteredPhotos.length }}/{{ photos.length }})</span></h1>
         <p>
-          把日常里短暂的光，整理成可以回看的片段。这里更像一面胶片墙，而不是整齐划一的商品列表。
+          把日常里短暂的光整理成可以回看的片段。这里更像一面胶片墙：花、树、雨夜和天空都按真实画面重新记录，不再让标题和照片错位。
         </p>
       </div>
       <div class="photo-filter-panel" aria-label="照片分类">
@@ -72,9 +72,11 @@ import { useGsapPageMotion } from '@/composables/useGsapPageMotion'
 import { photos } from '@/data/photos'
 import type { PhotoWork } from '@/types/content'
 
+type PhotoCategoryFilter = '全部' | PhotoWork['category']
+
 const pageRoot = ref<HTMLElement | null>(null)
-const selectedCategory = ref<'全部' | PhotoWork['category']>('全部')
-const categories = computed<Array<'全部' | PhotoWork['category']>>(() => [
+const selectedCategory = ref<PhotoCategoryFilter>('全部')
+const categories = computed<PhotoCategoryFilter[]>(() => [
   '全部',
   ...new Set(photos.map((photo) => photo.category)),
 ])
@@ -95,7 +97,7 @@ const filmFrameClass = (index: number, photo: PhotoWork) => ({
   'is-polaroid': index % 6 === 2,
 })
 
-const selectCategory = async (category: '全部' | PhotoWork['category']) => {
+const selectCategory = async (category: PhotoCategoryFilter) => {
   if (selectedCategory.value === category) return
   selectedCategory.value = category
   await nextTick()
