@@ -6833,8 +6833,8 @@
   .app-nav nav {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
   }
 
   .app-nav nav a {
@@ -7136,6 +7136,568 @@
 
   .photo-story-image img {
     max-height: 64vh;
+  }
+}
+
+/* Final mobile portfolio guardrails: code index and project cases must never overflow the phone viewport. */
+html,
+body,
+#app {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .site-frame,
+  .page-shell,
+  .app-nav,
+  .app-footer,
+  .glass-panel,
+  .code-index-page,
+  .project-case-page,
+  .code-index-hero,
+  .featured-project-band,
+  .code-category-strip,
+  .project-card,
+  .project-case-page section {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .site-frame {
+    width: 100%;
+    overflow-x: clip;
+    padding: 10px 10px 24px;
+  }
+
+  .app-nav {
+    width: 100%;
+    max-width: calc(100vw - 20px);
+    justify-self: center;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 12px;
+  }
+
+  .app-nav > *,
+  .app-nav nav,
+  .nav-actions,
+  .footer-links {
+    min-width: 0;
+  }
+
+  .brand {
+    font-size: clamp(1rem, 4.4vw, 1.22rem);
+  }
+
+  .app-nav nav a {
+    min-height: 36px;
+    padding: 7px 6px;
+    font-size: clamp(0.86rem, 3.7vw, 1rem);
+  }
+
+  .nav-actions button {
+    width: 42px;
+    min-width: 42px;
+    height: 38px;
+    justify-self: center;
+    gap: 4px;
+    padding: 0;
+  }
+
+  .nav-actions button span {
+    font-size: 0.92rem;
+  }
+
+  .nav-actions button small {
+    display: none;
+  }
+
+  .corner-return {
+    position: sticky;
+    top: 8px;
+    width: 44px;
+    height: 44px;
+    margin: 0 0 6px;
+    font-size: 1.45rem;
+  }
+
+  .corner-return span {
+    transform: translateY(-2px);
+  }
+
+  .code-index-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 18px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .code-index-copy {
+    min-width: 0;
+  }
+
+  .code-index-copy h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 12px;
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    line-height: 1.04;
+  }
+
+  .code-index-copy h1 span {
+    font-size: 0.58em;
+  }
+
+  .code-index-copy p:not(.eyebrow) {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.76;
+    overflow-wrap: anywhere;
+  }
+
+  .code-index-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+
+  .code-index-stats article {
+    min-height: 92px;
+    border-radius: 18px;
+    padding: 14px;
+  }
+
+  .code-index-stats strong {
+    font-size: clamp(1.85rem, 9vw, 2.5rem);
+  }
+
+  .featured-project-band {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .featured-project-copy h2 {
+    font-size: clamp(1.85rem, 8.8vw, 3rem);
+  }
+
+  .featured-project-image img {
+    max-height: 300px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.34);
+  }
+
+  .code-category-strip {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 10px;
+    padding: 18px;
+  }
+
+  .code-category-strip::before {
+    top: 32px;
+    bottom: 32px;
+    left: 42px;
+    width: 3px;
+    height: auto;
+    transform: none;
+  }
+
+  .code-category-strip article {
+    min-height: 0;
+    grid-template-columns: 52px minmax(0, 1fr);
+    align-items: center;
+    gap: 6px 12px;
+    padding: 14px;
+    transform: none;
+  }
+
+  .code-category-strip article.is-active {
+    transform: none;
+  }
+
+  .code-category-strip span {
+    grid-row: span 2;
+    width: 42px;
+    height: 42px;
+  }
+
+  .code-category-strip strong,
+  .code-category-strip p {
+    min-width: 0;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .project-illustration {
+    min-height: 190px;
+  }
+
+  .project-copy h2 {
+    font-size: clamp(1.35rem, 6vw, 1.85rem);
+  }
+
+  .project-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-copy .chip-row,
+  .featured-project-copy .chip-row,
+  .project-case-stack,
+  .ai-case-stack,
+  .particle-stack {
+    gap: 8px;
+  }
+
+  .project-copy .tag-chip,
+  .featured-project-copy .tag-chip,
+  .project-case-stack .tag-chip,
+  .ai-case-stack .tag-chip,
+  .particle-stack .tag-chip {
+    max-width: 100%;
+    min-width: 0;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    padding-inline: 12px;
+  }
+
+  .project-case-page {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .project-case-page,
+  .project-case-page * {
+    min-width: 0;
+  }
+
+  .ai-case-hero,
+  .ai-case-hero-board,
+  .project-case-hero,
+  .project-case-overview,
+  .project-case-tech-layout,
+  .particle-case-hero,
+  .mecha-case-hero,
+  .library-case-hero,
+  .extension-case-hero,
+  .campus-case-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-case-hero,
+  .ai-case-loop,
+  .ai-case-records,
+  .ai-case-tech,
+  .ai-case-diagrams,
+  .ai-case-retro,
+  .ai-case-metrics,
+  .project-case-hero,
+  .project-case-overview,
+  .project-case-flow,
+  .project-case-section,
+  .particle-case-hero,
+  .particle-case-scenes,
+  .particle-case-pipeline,
+  .particle-case-tech,
+  .particle-case-diagrams,
+  .particle-case-retro,
+  .mecha-case-hero,
+  .mecha-case-overview,
+  .mecha-case-battle,
+  .mecha-case-loop,
+  .mecha-case-tech,
+  .mecha-case-diagrams,
+  .mecha-case-retro,
+  .library-case-hero,
+  .library-case-overview,
+  .library-console-layout,
+  .library-case-tech,
+  .library-case-diagrams,
+  .library-case-retro,
+  .extension-case-hero,
+  .extension-case-overview,
+  .extension-case-states,
+  .extension-case-flow,
+  .extension-case-tech,
+  .extension-case-diagrams,
+  .extension-case-retro,
+  .campus-case-hero,
+  .campus-case-overview,
+  .campus-case-routes,
+  .campus-case-paths,
+  .campus-case-products,
+  .campus-case-admin,
+  .campus-case-tech,
+  .campus-case-diagrams,
+  .campus-case-retro {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 22px;
+    padding: 18px;
+  }
+
+  .ai-case-hero {
+    align-items: start;
+    min-height: auto;
+  }
+
+  .ai-case-hero-copy,
+  .project-case-hero-copy,
+  .particle-case-hero-copy,
+  .mecha-case-hero-copy,
+  .library-case-hero-copy,
+  .extension-case-hero-copy,
+  .campus-hero-copy {
+    gap: 14px;
+  }
+
+  .ai-case-hero-copy h1,
+  .project-case-hero-copy h1,
+  .particle-case-hero-copy h1,
+  .mecha-case-hero-copy h1,
+  .library-case-hero-copy h1,
+  .extension-case-hero-copy h1,
+  .campus-hero-copy h1 {
+    font-size: clamp(2.05rem, 10.4vw, 3.45rem);
+    line-height: 1.04;
+    overflow-wrap: anywhere;
+  }
+
+  .ai-case-hero-copy p:not(.eyebrow),
+  .project-case-lead,
+  .particle-case-hero-copy p:not(.eyebrow),
+  .mecha-case-hero-copy p:not(.eyebrow),
+  .library-case-hero-copy p:not(.eyebrow),
+  .extension-case-hero-copy p:not(.eyebrow),
+  .campus-case-section-head p,
+  .campus-hero-copy p:not(.eyebrow) {
+    font-size: 0.98rem;
+    line-height: 1.74;
+    overflow-wrap: anywhere;
+  }
+
+  .ai-case-hero-actions,
+  .project-case-actions,
+  .particle-case-actions,
+  .mecha-case-actions,
+  .library-case-actions,
+  .extension-case-actions,
+  .campus-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .ai-case-hero-actions button,
+  .project-case-actions button,
+  .particle-case-actions button,
+  .mecha-case-actions button,
+  .library-case-actions button,
+  .extension-case-actions button,
+  .campus-hero-actions button {
+    width: 100%;
+    padding-inline: 14px;
+    white-space: normal;
+  }
+
+  .ai-case-main-shot {
+    min-height: 0;
+  }
+
+  .ai-case-hero-copy > *,
+  .ai-case-main-shot,
+  .ai-case-overview-card,
+  .project-case-hero-copy > *,
+  .project-case-device,
+  .particle-case-hero-copy > *,
+  .particle-case-overview,
+  .mecha-case-hero-copy > *,
+  .mecha-case-cabinet,
+  .library-case-hero-copy > *,
+  .library-case-login-card,
+  .extension-case-hero-copy > *,
+  .extension-floating-panel,
+  .campus-hero-copy > *,
+  .campus-hero-shot {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .ai-case-main-shot img,
+  .project-case-device img,
+  .project-case-shot img,
+  .ai-record-card img,
+  .particle-scene-card img,
+  .mecha-case-screen img,
+  .mecha-shot-card img,
+  .library-module-shot img,
+  .extension-state-card img,
+  .campus-hero-shot img,
+  .campus-focus-shot img {
+    width: 100%;
+    max-height: 58vh;
+    min-height: 0;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.24);
+  }
+
+  .ai-case-main-shot figcaption {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 10px;
+  }
+
+  .ai-case-overview-card,
+  .particle-case-overview,
+  .library-case-login-card {
+    width: 100%;
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  .ai-case-metrics,
+  .project-case-metrics,
+  .ai-case-tech-grid,
+  .ai-case-diagram-grid,
+  .ai-case-loop-nodes,
+  .project-case-flow-grid,
+  .project-case-feature-grid,
+  .project-case-diagram-grid,
+  .project-case-tech-cards,
+  .particle-scene-grid,
+  .particle-pipeline-nodes,
+  .particle-tech-grid,
+  .particle-diagram-grid,
+  .mecha-case-hud,
+  .mecha-loop-grid,
+  .mecha-diagram-grid,
+  .mecha-rule-panels,
+  .mecha-tech-grid,
+  .library-case-metrics,
+  .library-tech-grid,
+  .library-diagram-grid,
+  .extension-case-metrics,
+  .extension-tech-grid,
+  .extension-flow-grid,
+  .extension-state-grid,
+  .extension-diagram-grid,
+  .campus-case-metrics,
+  .campus-route-map,
+  .campus-path-grid,
+  .campus-product-grid,
+  .campus-tech-grid,
+  .campus-diagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-record-card {
+    position: relative;
+    top: auto;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .ai-record-index {
+    top: 12px;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .project-case-table dl div,
+  .library-case-table dl div,
+  .extension-case-table dl div,
+  .campus-case-table dl div,
+  .mecha-case-table dl div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .app-footer {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-frame {
+    padding-inline: 8px;
+  }
+
+  .app-nav {
+    max-width: calc(100vw - 16px);
+    border-radius: 22px;
+    padding: 10px;
+  }
+
+  .app-nav nav,
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-actions button small {
+    display: none;
+  }
+
+  .nav-actions button span {
+    font-size: 1.05rem;
+  }
+
+  .code-index-hero,
+  .featured-project-band,
+  .code-category-strip,
+  .project-card,
+  .ai-case-hero,
+  .ai-case-loop,
+  .ai-case-records,
+  .ai-case-tech,
+  .ai-case-diagrams,
+  .ai-case-retro,
+  .project-case-hero,
+  .project-case-overview,
+  .project-case-flow,
+  .project-case-section {
+    padding: 16px;
+  }
+
+  .code-index-copy h1 {
+    font-size: clamp(1.86rem, 9.8vw, 2.65rem);
+  }
+
+  .code-index-stats strong {
+    font-size: 1.9rem;
+  }
+
+  .code-index-stats span {
+    font-size: 0.92rem;
+  }
+
+  .ai-case-hero-copy h1,
+  .project-case-hero-copy h1,
+  .particle-case-hero-copy h1,
+  .mecha-case-hero-copy h1,
+  .library-case-hero-copy h1,
+  .extension-case-hero-copy h1,
+  .campus-hero-copy h1 {
+    font-size: clamp(1.92rem, 10vw, 2.9rem);
   }
 }
 
